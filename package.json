@@ -27,7 +27,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "json": "json-server data.js -p 5000",
+    "serve": "react-scripts start",
+    "start": "npm-run-all -p serve json",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
